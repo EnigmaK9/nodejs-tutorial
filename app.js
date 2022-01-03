@@ -1,10 +1,18 @@
-const amount = 9
+// GLOBALS - NO WINDOW!!
+//__dirname - path to current directory
+//__filename - file name
+// require - function to use modules (CommonJS)
+// module - info about current module (file)
+// process - info about env where the program is being executed
+const names  = require('./04-names') // start with dot and 
+const sayHi  = require('./05-utils')
+console.log(names)
 
-if(amount < 10){
-    console.log('small number')    
-}
-else{
-    console.log('large number')
-}
+sayHi('susan')
+sayHi(john)
+sayHi(peter)
 
-console.log(`hey it's my first node app!!!`)
+//console.log(__dirname)
+//setInterval(() => {
+//    console.log('hello world')
+//},1000)
